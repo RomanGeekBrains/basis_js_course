@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        // 4. Реализовать основные 4 арифметические операции (+, -, /, *) в виде функций с
+        // двумя параметрами. Т.е. например, функция для сложения должна принимать два числа,
+        // складывать их и возвращать результат. Обязательно использовать оператор return.
+
+        function addition(num_1, num_2){
+            return num_1 + num_2
+        };
+
+        function subtraction(num_1, num_2){
+            return num_1 - num_2
+        };
+
+        function multiplication(num_1, num_2){
+            return num_1 * num_2
+        };
+
+        function division(num_1, num_2){
+            if (num_2 == 0){
+                return ('Error: division by zero!')
+            }else{
+                return num_1 / num_2
+            }
+        };
+
+        let num_1 = +prompt('Введите значение для 1-ого слогаймого в выражениях');
+        let num_2 = +prompt('Введите значение для 2-ого слогаймого в выражениях');
+
+        alert(`Сумма = ${addition(num_1, num_2)}`);
+        alert(`Разность = ${subtraction(num_1, num_2)}`);
+        alert(`Произведение = ${multiplication(num_1, num_2)}`);
+        alert(`Частное = ${division(num_1, num_2)}`);
+
+    </script>
+</body>
+</html>
